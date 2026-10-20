@@ -23,7 +23,9 @@ Snippet de código
   publisher = {Elsevier},
   doi = {10.1016/j.ejor.2021.03.050}
 }
+
 ⚙️ Prerequisites & Dependencies
+
 To compile and execute these algorithms, you will need:
 
 A C++ compiler supporting modern standards (e.g., C++11 or higher).
