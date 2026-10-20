@@ -1,0 +1,13 @@
+Algoritmos Relax-and-Fix e Fix-and-Optimize
+
+* RFheur_v1 - A cada iteração fixa apenas um período e realiza o Fix-and-Optimize com solução corrente;
+
+* RFheur_v2 - Realiza primeiro o Relax-and-Fix fixando múltiplos períodos menores que l e em seguida realiza o Fix-and-Optimize com a solução encontrada pelo Relax-and-Fix, otimizando para cada iteração l todos os períodos maiores que l-2 e menores que l+2 e fixando o restante dos períodos;
+
+* RFheur_v3 - Realiza primeiro o Relax-and-Fix fixando múltiplos períodos menores  que l e em seguida realiza o Fix-and-Optimize com a solução encontrada pelo Relax-and-Fix, otimizando cinco períodos por vez, como na versão 2, e fixando o restante dos períodos. Se pelo menos duas soluções forem encontradas realiza o path-relinking.  
+
+* RFheur_v3_raf - Realiza primeiro o Relax-and-Fix fixando múltiplos períodos e em seguida realiza o Fix-and-Optimize com a solução encontrada pelo Relax-and-Fix, otimizando cinco períodos por vez, como na versão 2, e fixando o restante dos períodos; Utiliza o modelo proposto por Raf Jans;
+
+* RFheur_v4 - Realiza primeiro o Relax-and-Fix fixando múltiplos períodos menores  que l ou com custo reduzido menor que zero e em seguida realiza o Fix-and-Optimize com a solução encontrada pelo Relax-and-Fix, otimizando cinco períodos por vez, como na versão 2, e fixando o restante dos períodos. Se pelo menos duas soluções forem encontradas realiza o path-relinking.
+
+* RFheur_v5 - Realiza primeiro o Relax-and-Fix fixando múltiplos períodos menores  que l ou com custo reduzido menor que zero e em seguida realiza o Fix-and-Optimize com a solução encontrada pelo Relax-and-Fix, otimizando cinco períodos por vez, como na versão 2, e fixando o restante dos períodos. Se pelo menos uma solução for encontrada realiza o kernel.

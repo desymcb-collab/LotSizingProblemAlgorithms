@@ -1,0 +1,14 @@
+#PBS -N script1
+#PBS -l select=2:ncpus=2:mem=4gb
+#PBS -l walltime=24:00:00
+cd /lustre/desymcb/NonTriangular/RFO+X
+./HeurX Data2-15-5-0.8-0.5-50-80-20-1-mod Data2-15-5-0.8-0.5-50-80-20 > saidaData1-1 2> erroData1
+./HeurX Data2-15-5-0.8-0.5-50-80-20-2-mod Data2-15-5-0.8-0.5-50-80-20 > saidaData1-2 2> erroData1
+./HeurX Data2-15-5-0.8-0.5-50-80-20-3-mod Data2-15-5-0.8-0.5-50-80-20 > saidaData1-3 2> erroData1
+./HeurX Data2-15-5-0.8-0.5-50-80-20-4-mod Data2-15-5-0.8-0.5-50-80-20 > saidaData1-4 2> erroData1
+./HeurX Data2-15-5-0.8-0.5-50-80-20-5-mod Data2-15-5-0.8-0.5-50-80-20 > saidaData1-5 2> erroData1
+./HeurX Data2-15-5-0.8-0.5-50-80-20-6-mod Data2-15-5-0.8-0.5-50-80-20 > saidaData1-6 2> erroData1
+./HeurX Data2-15-5-0.8-0.5-50-80-20-7-mod Data2-15-5-0.8-0.5-50-80-20 > saidaData1-7 2> erroData1
+./HeurX Data2-15-5-0.8-0.5-50-80-20-8-mod Data2-15-5-0.8-0.5-50-80-20 > saidaData1-8 2> erroData1
+./HeurX Data2-15-5-0.8-0.5-50-80-20-9-mod Data2-15-5-0.8-0.5-50-80-20 > saidaData1-9 2> erroData1
+./HeurX Data2-15-5-0.8-0.5-50-80-20-10-mod Data2-15-5-0.8-0.5-50-80-20 > saidaData1-10 2> erroData1

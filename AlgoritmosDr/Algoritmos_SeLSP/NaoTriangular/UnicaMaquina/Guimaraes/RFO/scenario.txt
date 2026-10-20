@@ -1,0 +1,38 @@
+###################################################### -*- mode: r -*- #####
+## Scenario setup for Iterated Race (iRace).
+############################################################################
+## To use the default value of a parameter of iRace, simply do not set
+## the parameter (comment it out in this file, and do not give any
+## value on the command line).
+
+## File that contains the description of the parameters.
+parameterFile = "/home/desiree/Dropbox/Doutorado/AlgoritmosDr/Algoritmos_SeLSP/NaoTriangular/UnicaMaquina/Guimaraes/tuning/parameters-rfo.txt"
+forbiddenFile = "/home/desiree/Dropbox/Doutorado/AlgoritmosDr/Algoritmos_SeLSP/NaoTriangular/UnicaMaquina/Guimaraes/tuning/forbidden.txt"
+
+## Directory where the programs will be run.
+execDir = "/home/desiree/Dropbox/Doutorado/AlgoritmosDr/Algoritmos_SeLSP/NaoTriangular/UnicaMaquina/Guimaraes/tuning/"
+
+## Directory where tuning instances are located, either absolute path or
+## relative to current directory.
+instancesDir = "/home/desiree/Dropbox/Doutorado/AlgoritmosDr/Algoritmos_SeLSP/NaoTriangular/UnicaMaquina/Guimaraes/tuning/Instances"
+
+## The maximum number of runs (invocations of targetRunner) that will petuningrmed. It
+## determines the (maximum) budget of experiments for the tuning.
+maxExperiments = 500
+nbIterations = 2
+
+## File that contains a set of initial configurations. If empty or NULL,
+## all initial configurations are randomly generated.
+#configurationsFile = "/home/desiree/Dropbox/Doutorado/AlgoritmosDr/Algoritmos_SeLSP/NaoTriangular/UnicaMaquina/Guimaraes/tuning/default.txt"
+
+## Indicates the number of decimal places to be considered for the
+## real parameters.
+digits = 2
+
+## A value of 0 silences all debug messages. Higher values provide
+## more verbose debug messages.
+# debugLevel = 0
+
+## END of scenario file
+############################################################################
+

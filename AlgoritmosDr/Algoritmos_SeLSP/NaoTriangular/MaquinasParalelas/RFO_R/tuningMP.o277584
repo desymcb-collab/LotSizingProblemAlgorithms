@@ -1,0 +1,117 @@
+*******************************************************************************
+* irace: An implementation in R of Iterated Race
+* Version: 3.1.2112M
+* Copyright (C) 2010-2018
+* Manuel Lopez-Ibanez     <manuel.lopez-ibanez@manchester.ac.uk>
+* Jeremie Dubois-Lacoste  
+* Leslie Perez Caceres    <leslie.perez.caceres@ulb.ac.be>
+*
+* This is free software, and you are welcome to redistribute it under certain
+* conditions.  See the GNU General Public License for details. There is NO
+* WARRANTY; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+*
+* irace builds upon previous code from the race package:
+*
+* race: Racing methods for the selection of the best
+* Copyright (C) 2003 Mauro Birattari
+*******************************************************************************
+# installed at: /mnt/nfs/home/desymcb/R/x86_64-pc-linux-gnu-library/3.3/irace
+# called with: 
+Warning: A default scenario file './scenario.txt' has been found and will be read
+# 2 expression(s) specifying forbidden configurations read from '/mnt/lustre/home/desymcb/PIDLS-NT/AjusteMP/RFO_R/forbidden.txt'
+# 2019-02-12 13:19:19 BRST: Initialization
+# Elitist race
+# Elitist new instances: 1
+# Elitist limit: 2
+# nbIterations: 2
+# minNbSurvival: 3
+# nbParameters: 3
+# seed: 944467763
+# confidence level: 0.95
+# budget: 300
+# mu: 5
+# deterministic: FALSE
+
+# 2019-02-12 13:19:20 BRST: Iteration 1 of 2
+# experimentsUsedSoFar: 0
+# remainingBudget: 300
+# currentBudget: 150
+# nbConfigurations: 25
+  Markers:
+     x No test is performed.
+     - The test is performed and some configurations are discarded.
+     = The test is performed but no configuration is discarded.
+     ! The test is performed and configurations could be discarded but elite configurations are preserved.
+     . All alive configurations are elite and nothing is discarded
+
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+| |   Instance|      Alive|       Best|      Mean best| Exp so far|  W time|  rho|KenW|  Qvar|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+|x|          1|         25|          1|    7776.000000|         25|01:52:23|   NA|  NA|    NA|
+|x|          2|         25|         15|    30572.00000|         50|15:39:05|-0.40|0.30|1.4693|
+|x|          3|         25|         15|    23412.66667|         75|02:00:45|+0.01|0.34|1.0152|
+|x|          4|         25|         15|    20374.25000|        100|00:06:31|+0.09|0.32|0.8555|
+|=|          5|         25|         15|    23702.40000|        125|14:30:39|+0.03|0.22|0.8714|
+|=|          6|         25|         15|    25750.66667|        150|09:34:26|+0.10|0.25|0.8112|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+Best-so-far configuration:          15    mean value:     25750.66667
+Description of the best-so-far configuration:
+   .ID. jump jumpfo binary .PARENT.
+15   15    2      1      5       NA
+
+# 2019-02-14 09:03:11 BRST: Elite configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+   jump jumpfo binary
+15    2      1      5
+22    3      4      5
+14    2      3      5
+# 2019-02-14 09:03:11 BRST: Iteration 2 of 2
+# experimentsUsedSoFar: 150
+# remainingBudget: 150
+# currentBudget: 150
+# nbConfigurations: 24
+  Markers:
+     x No test is performed.
+     - The test is performed and some configurations are discarded.
+     = The test is performed but no configuration is discarded.
+     ! The test is performed and configurations could be discarded but elite configurations are preserved.
+     . All alive configurations are elite and nothing is discarded
+
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+| |   Instance|      Alive|       Best|      Mean best| Exp so far|  W time|  rho|KenW|  Qvar|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+|x|          7|         24|         26|    37349.00000|         24|13:16:36|   NA|  NA|    NA|
+|x|          5|         24|         42|    37101.50000|         45|13:19:50|-0.11|0.44|1.0575|
+|x|          1|         24|         36|    27338.33333|         66|01:51:24|-0.19|0.21|1.2007|
+|x|          3|         24|         36|    22777.25000|         87|02:07:53|-0.10|0.17|1.0245|
+|=|          2|         24|         36|    28863.20000|        108|18:44:13|-0.05|0.16|0.9684|
+|=|          6|         24|         36|    30048.33333|        129|12:00:41|+0.02|0.18|0.9249|
+|=|          4|         24|         36|    27364.14286|        150|00:07:20|+0.01|0.15|0.7975|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+Best-so-far configuration:          36    mean value:     27364.14286
+Description of the best-so-far configuration:
+   .ID. jump jumpfo binary .PARENT.
+36   36    1      2      5       14
+
+# 2019-02-16 22:31:11 BRST: Elite configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+   jump jumpfo binary
+36    1      2      5
+40    3      1      5
+33    1      1      5
+# 2019-02-16 22:31:11 BRST: Stopped because budget is exhausted
+# Iteration: 3
+# nbIterations: 2
+# experimentsUsedSoFar: 300
+# timeUsed: 0
+# remainingBudget: 0
+# currentBudget: 150
+# number of elites: 3
+# nbConfigurations: 24
+# Best configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+   jump jumpfo binary
+36    1      2      5
+40    3      1      5
+33    1      1      5
+# Best configurations as commandlines (first number is the configuration ID; same order as above):
+36  -a 1 -b 2 -c 5
+40  -a 3 -b 1 -c 5
+33  -a 1 -b 1 -c 5

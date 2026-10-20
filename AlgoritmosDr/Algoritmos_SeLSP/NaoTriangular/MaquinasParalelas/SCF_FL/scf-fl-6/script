@@ -1,0 +1,5 @@
+#PBS -N scf-6
+#PBS -l select=2:ncpus=2:mem=32gb
+#PBS -l walltime=336:00:00
+cd /lustre/desymcb/PIDLS-NT/SCF_FL/scf-fl-6
+./scf > saida_padrao 2> saida_erro

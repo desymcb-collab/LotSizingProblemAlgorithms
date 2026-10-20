@@ -1,0 +1,161 @@
+==8593== Memcheck, a memory error detector
+==8593== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==8593== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==8593== Command: ./CPLEX
+==8593== Parent PID: 4198
+==8593== 
+--8593-- 
+--8593-- Valgrind options:
+--8593--    -v
+--8593--    --track-origins=yes
+--8593--    --tool=memcheck
+--8593--    --leak-check=yes
+--8593--    --show-leak-kinds=all
+--8593--    --num-callers=40
+--8593--    --read-var-info=yes
+--8593--    --log-file=valgrind.log
+--8593-- Contents of /proc/version:
+--8593--   Linux version 4.2.0-42-generic (buildd@lgw01-54) (gcc version 5.2.1 20151010 (Ubuntu 5.2.1-22ubuntu2) ) #49-Ubuntu SMP Tue Jun 28 21:26:26 UTC 2016
+--8593-- 
+--8593-- Arch and hwcaps: AMD64, LittleEndian, amd64-cx16-rdtscp-sse3-avx
+--8593-- Page sizes: currently 4096, max supported 4096
+--8593-- Valgrind library directory: /usr/lib/valgrind
+--8593-- Reading syms from /home/desiree/Dropbox/Doutorado/AlgoritmosDr/Algoritmos_SeLSP/PIDLS_CarryOver_CPLEX/CPLEX
+--8593-- Reading syms from /lib/x86_64-linux-gnu/ld-2.21.so
+--8593--   Considering /lib/x86_64-linux-gnu/ld-2.21.so ..
+--8593--   .. CRC mismatch (computed a61475e3 wanted a5d187f6)
+--8593--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/ld-2.21.so ..
+--8593--   .. CRC is valid
+--8593-- warning: addVar: unknown size (seen)
+--8593-- warning: addVar: unknown size (seen)
+--8593-- warning: addVar: unknown size (seen)
+--8593-- Reading syms from /usr/lib/valgrind/memcheck-amd64-linux
+--8593--   Considering /usr/lib/valgrind/memcheck-amd64-linux ..
+--8593--   .. CRC mismatch (computed cd34a87b wanted 936d30dc)
+--8593--    object doesn't have a symbol table
+--8593--    object doesn't have a dynamic symbol table
+--8593-- Scheduler: using generic scheduler lock implementation.
+--8593-- Reading suppressions file: /usr/lib/valgrind/default.supp
+==8593== embedded gdbserver: reading from /tmp/vgdb-pipe-from-vgdb-to-8593-by-desiree-on-???
+==8593== embedded gdbserver: writing to   /tmp/vgdb-pipe-to-vgdb-from-8593-by-desiree-on-???
+==8593== embedded gdbserver: shared mem   /tmp/vgdb-pipe-shared-mem-vgdb-8593-by-desiree-on-???
+==8593== 
+==8593== TO CONTROL THIS PROCESS USING vgdb (which you probably
+==8593== don't want to do, unless you know exactly what you're doing,
+==8593== or are doing some strange experiment):
+==8593==   /usr/lib/valgrind/../../bin/vgdb --pid=8593 ...command...
+==8593== 
+==8593== TO DEBUG THIS PROCESS USING GDB: start GDB like this
+==8593==   /path/to/gdb ./CPLEX
+==8593== and then give GDB the following command
+==8593==   target remote | /usr/lib/valgrind/../../bin/vgdb --pid=8593
+==8593== --pid is optional if only one valgrind process is running
+==8593== 
+--8593-- REDIR: 0x401ad90 (ld-linux-x86-64.so.2:strlen) redirected to 0x3809e1b1 (???)
+--8593-- Reading syms from /usr/lib/valgrind/vgpreload_core-amd64-linux.so
+--8593--   Considering /usr/lib/valgrind/vgpreload_core-amd64-linux.so ..
+--8593--   .. CRC mismatch (computed 1c3ef3cc wanted d1ae2653)
+--8593--    object doesn't have a symbol table
+--8593-- Reading syms from /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so
+--8593--   Considering /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so ..
+--8593--   .. CRC mismatch (computed 6e6e6f70 wanted ea7b69f1)
+--8593--    object doesn't have a symbol table
+==8593== WARNING: new redirection conflicts with existing -- ignoring it
+--8593--     old: 0x0401ad90 (strlen              ) R-> (0000.0) 0x3809e1b1 ???
+--8593--     new: 0x0401ad90 (strlen              ) R-> (2007.0) 0x04c2f060 strlen
+--8593-- REDIR: 0x401aaf0 (ld-linux-x86-64.so.2:index) redirected to 0x4c2ec00 (index)
+--8593-- REDIR: 0x401ad10 (ld-linux-x86-64.so.2:strcmp) redirected to 0x4c30110 (strcmp)
+--8593-- REDIR: 0x401ba80 (ld-linux-x86-64.so.2:mempcpy) redirected to 0x4c33330 (mempcpy)
+--8593-- Reading syms from /lib/x86_64-linux-gnu/libpthread-2.21.so
+--8593--   Considering /lib/x86_64-linux-gnu/libpthread-2.21.so ..
+--8593--   .. CRC mismatch (computed 6069e599 wanted 76e5a555)
+--8593--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/libpthread-2.21.so ..
+--8593--   .. CRC is valid
+--8593-- Reading syms from /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21
+--8593--   Considering /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21 ..
+--8593--   .. CRC mismatch (computed 5d01d637 wanted 955dde47)
+--8593--    object doesn't have a symbol table
+--8593-- Reading syms from /lib/x86_64-linux-gnu/libm-2.21.so
+--8593--   Considering /lib/x86_64-linux-gnu/libm-2.21.so ..
+--8593--   .. CRC mismatch (computed a95e460c wanted e1479bf9)
+--8593--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/libm-2.21.so ..
+--8593--   .. CRC is valid
+--8593-- Reading syms from /lib/x86_64-linux-gnu/libgcc_s.so.1
+--8593--   Considering /lib/x86_64-linux-gnu/libgcc_s.so.1 ..
+--8593--   .. CRC mismatch (computed eaa68623 wanted ca38ad7e)
+--8593--    object doesn't have a symbol table
+--8593-- Reading syms from /lib/x86_64-linux-gnu/libc-2.21.so
+--8593--   Considering /lib/x86_64-linux-gnu/libc-2.21.so ..
+--8593--   .. CRC mismatch (computed a13b189b wanted 6ebf1bf1)
+--8593--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/libc-2.21.so ..
+--8593--   .. CRC is valid
+--8593-- warning: addVar: unknown size (to_buf)
+--8593-- warning: addVar: unknown size (shlib_name)
+--8593-- warning: addVar: unknown size (shlib_name)
+--8593-- warning: addVar: unknown size (init_name)
+--8593-- warning: addVar: unknown size (name)
+--8593-- REDIR: 0x5986900 (libc.so.6:strcasecmp) redirected to 0x4a26730 (_vgnU_ifunc_wrapper)
+--8593-- REDIR: 0x5988bf0 (libc.so.6:strncasecmp) redirected to 0x4a26730 (_vgnU_ifunc_wrapper)
+--8593-- REDIR: 0x5986080 (libc.so.6:memcpy@GLIBC_2.2.5) redirected to 0x4a26730 (_vgnU_ifunc_wrapper)
+--8593-- REDIR: 0x5984320 (libc.so.6:rindex) redirected to 0x4c2e8e0 (rindex)
+--8593-- REDIR: 0x597b3f0 (libc.so.6:malloc) redirected to 0x4c2bb60 (malloc)
+--8593-- REDIR: 0x5982620 (libc.so.6:strlen) redirected to 0x4c2efa0 (strlen)
+--8593-- REDIR: 0x5985b00 (libc.so.6:__GI_memcmp) redirected to 0x4c31bf0 (__GI_memcmp)
+--8593-- REDIR: 0x5980bc0 (libc.so.6:strcmp) redirected to 0x4a26730 (_vgnU_ifunc_wrapper)
+--8593-- REDIR: 0x5996bf0 (libc.so.6:__strcmp_sse2_unaligned) redirected to 0x4c2ffd0 (strcmp)
+--8593-- REDIR: 0x597bf30 (libc.so.6:calloc) redirected to 0x4c2dae0 (calloc)
+--8593-- REDIR: 0x59862b0 (libc.so.6:__GI_mempcpy) redirected to 0x4c33060 (__GI_mempcpy)
+--8593-- REDIR: 0x5985ac0 (libc.so.6:bcmp) redirected to 0x4a26730 (_vgnU_ifunc_wrapper)
+--8593-- REDIR: 0x5a64c40 (libc.so.6:__memcmp_sse4_1) redirected to 0x4c31d30 (__memcmp_sse4_1)
+--8593-- REDIR: 0x598d660 (libc.so.6:strchrnul) redirected to 0x4c32e60 (strchrnul)
+--8593-- REDIR: 0x5984f60 (libc.so.6:__GI_strstr) redirected to 0x4c33590 (__strstr_sse2)
+--8593-- REDIR: 0x50e4170 (libstdc++.so.6:operator new(unsigned long)) redirected to 0x4c2c0c0 (operator new(unsigned long))
+--8593-- REDIR: 0x597b7a0 (libc.so.6:free) redirected to 0x4c2cdc0 (free)
+--8593-- REDIR: 0x50e4220 (libstdc++.so.6:operator new[](unsigned long)) redirected to 0x4c2c7e0 (operator new[](unsigned long))
+--8593-- REDIR: 0xffffffffff600400 (???:???) redirected to 0x3809e19d (???)
+--8593-- REDIR: 0x59860e0 (libc.so.6:memset) redirected to 0x4a26730 (_vgnU_ifunc_wrapper)
+--8593-- REDIR: 0x5986150 (libc.so.6:__GI_memset) redirected to 0x4c32520 (memset)
+--8593-- REDIR: 0x59842e0 (libc.so.6:strncpy) redirected to 0x4a26730 (_vgnU_ifunc_wrapper)
+--8593-- REDIR: 0x599c090 (libc.so.6:__strncpy_sse2_unaligned) redirected to 0x4c2f5b0 (__strncpy_sse2_unaligned)
+--8593-- REDIR: 0x598b2d0 (libc.so.6:memcpy@@GLIBC_2.14) redirected to 0x4a26730 (_vgnU_ifunc_wrapper)
+--8593-- REDIR: 0x5996ea0 (libc.so.6:__memcpy_sse2_unaligned) redirected to 0x4c30500 (memcpy@@GLIBC_2.14)
+--8593-- REDIR: 0x597b970 (libc.so.6:realloc) redirected to 0x4c2dd20 (realloc)
+--8593-- REDIR: 0x50e2240 (libstdc++.so.6:operator delete[](void*)) redirected to 0x4c2d720 (operator delete[](void*))
+--8593-- REDIR: 0x5982050 (libc.so.6:strcpy) redirected to 0x4a26730 (_vgnU_ifunc_wrapper)
+--8593-- REDIR: 0x599ba60 (libc.so.6:__strcpy_sse2_unaligned) redirected to 0x4c2f080 (strcpy)
+--8593-- REDIR: 0x5980770 (libc.so.6:strcat) redirected to 0x4a26730 (_vgnU_ifunc_wrapper)
+--8593-- REDIR: 0x599e880 (libc.so.6:__strcat_sse2_unaligned) redirected to 0x4c2ec40 (strcat)
+--8593-- REDIR: 0x5985770 (libc.so.6:memchr) redirected to 0x4c301b0 (memchr)
+--8593-- REDIR: 0x5985f00 (libc.so.6:__GI_memmove) redirected to 0x4c32860 (__GI_memmove)
+--8593-- REDIR: 0x597e260 (libc.so.6:posix_memalign) redirected to 0x4c2e0e0 (posix_memalign)
+--8593-- REDIR: 0xffffffffff600000 (???:???) redirected to 0x3809e193 (???)
+--8593-- REDIR: 0x5982a40 (libc.so.6:strncmp) redirected to 0x4a26730 (_vgnU_ifunc_wrapper)
+--8593-- REDIR: 0x5a3c2a0 (libc.so.6:__strncmp_sse42) redirected to 0x4c2f830 (__strncmp_sse42)
+--8593-- REDIR: 0x50e2210 (libstdc++.so.6:operator delete(void*)) redirected to 0x4c2d220 (operator delete(void*))
+--8593-- REDIR: 0xb389b0 (NONE:_intel_fast_memcpy) redirected to 0x4c31820 (_intel_fast_memcpy)
+--8593-- REDIR: 0x598b340 (libc.so.6:__GI_memcpy) redirected to 0x4c30b60 (__GI_memcpy)
+==8593== 
+==8593== HEAP SUMMARY:
+==8593==     in use at exit: 72,704 bytes in 1 blocks
+==8593==   total heap usage: 4,591 allocs, 4,590 frees, 7,063,134 bytes allocated
+==8593== 
+==8593== Searching for pointers to 1 not-freed blocks
+==8593== Checked 398,600 bytes
+==8593== 
+==8593== 72,704 bytes in 1 blocks are still reachable in loss record 1 of 1
+==8593==    at 0x4C2BBCF: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==8593==    by 0x50E01FF: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21)
+==8593==    by 0x40105C9: call_init.part.0 (dl-init.c:72)
+==8593==    by 0x40106DA: call_init (dl-init.c:30)
+==8593==    by 0x40106DA: _dl_init (dl-init.c:120)
+==8593==    by 0x4000D09: ??? (in /lib/x86_64-linux-gnu/ld-2.21.so)
+==8593== 
+==8593== LEAK SUMMARY:
+==8593==    definitely lost: 0 bytes in 0 blocks
+==8593==    indirectly lost: 0 bytes in 0 blocks
+==8593==      possibly lost: 0 bytes in 0 blocks
+==8593==    still reachable: 72,704 bytes in 1 blocks
+==8593==         suppressed: 0 bytes in 0 blocks
+==8593== 
+==8593== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==8593== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

@@ -1,0 +1,5 @@
+#PBS -N rfopr-3
+#PBS -l select=2:ncpus=2:mem=16gb
+#PBS -l walltime=336:00:00
+cd /lustre/desymcb/PIDLS-NT/RFO-PR/RFO-3
+./rfo > saida_padrao 2> saida_erro

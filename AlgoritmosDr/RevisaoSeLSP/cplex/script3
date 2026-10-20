@@ -1,0 +1,14 @@
+#PBS -N script3
+#PBS -l select=2:ncpus=2:mem=4gb
+#PBS -l walltime=336:00:00
+cd /lustre/desymcb/cplex/
+./cplex Data2-15-10-0.8-0.5-100-80-20-1-mod > saidaData3-1 2> erroData3
+./cplex Data2-15-10-0.8-0.5-100-80-20-2-mod > saidaData3-2 2> erroData3
+./cplex Data2-15-10-0.8-0.5-100-80-20-3-mod > saidaData3-3 2> erroData3
+./cplex Data2-15-10-0.8-0.5-100-80-20-4-mod > saidaData3-4 2> erroData3
+./cplex Data2-15-10-0.8-0.5-100-80-20-5-mod > saidaData3-5 2> erroData3
+./cplex Data2-15-10-0.8-0.5-100-80-20-6-mod > saidaData3-6 2> erroData3
+./cplex Data2-15-10-0.8-0.5-100-80-20-7-mod > saidaData3-7 2> erroData3
+./cplex Data2-15-10-0.8-0.5-100-80-20-8-mod > saidaData3-8 2> erroData3
+./cplex Data2-15-10-0.8-0.5-100-80-20-9-mod > saidaData3-9 2> erroData3
+./cplex Data2-15-10-0.8-0.5-100-80-20-10-mod > saidaData3-10 2> erroData3

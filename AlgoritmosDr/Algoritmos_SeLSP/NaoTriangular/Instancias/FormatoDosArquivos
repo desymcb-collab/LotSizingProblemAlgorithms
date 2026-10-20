@@ -1,0 +1,11 @@
+NProducts:  The number of products in the instance.
+NPeriods: The number of periods in the instance.
+NMachines: The number of machines in the instance.
+h: A vector of length NProducts indicating the holding cost of each product.
+p: A NMachines x NProducts matrix indicating the processing time of each product on each machine.
+stimes: A NMachines x NProducts x NProducts  matrix indicating the setup time between two products on a given machine. 
+Cap: A NMachines x  NPeriods matrix to indicate the capacity of each machines in each period. 
+d: A NProducts x NPeriods matrix  stating the demand for a given product in a given period.
+M: A NProducts x NPeriods matrix indicating the maximum production that could be produced of a given product in a given periods (essentially the sum of demand from the current period to the end).
+scosts: A NMachines x NProducts x NProducts matrix indicating the setup cost between two products on a given machine. 
+

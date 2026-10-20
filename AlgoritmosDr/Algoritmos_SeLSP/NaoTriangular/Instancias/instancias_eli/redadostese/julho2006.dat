@@ -1,0 +1,853 @@
+# Dados Novos Agroceres referentes ao mes de julho de 2006
+
+data;
+
+set PR := fam1 fam2 fam3 fam4 fam5 fam6 fam7 fam8 fam9 fam10
+			   fam11 fam12 fam13 fam14 fam15 fam16 fam17 fam18 fam19 fam20 fam21 fam22 fam23 fam24 fam25 fam26;
+
+
+param T := 4;
+
+param K := 
+1 48  
+2 48
+3 48
+4 48
+;
+
+
+param P := 
+fam1	0.4
+fam2	0.4
+fam3	0.4
+fam4	0.4
+fam5	0.2
+fam6	0.4
+fam7	0.2
+fam8	0.2
+fam9	0.2
+fam10	0.2
+fam11	0.2
+fam12	0.2
+fam13	0.3
+fam14	0.3
+fam15	0.2
+fam16	0.2
+fam17	0.2
+fam18	0.4
+fam19	0.6
+fam20	0.6
+fam21	0.3
+fam22	0.2
+fam23	0.2
+fam24	0.2
+fam25	0.3
+fam26	0.2 ;
+
+param H := 
+fam1    66
+fam2    17
+fam3    8.51
+fam4    15.12
+fam5    10.34
+fam6    11
+fam7    4.21
+fam8    4.43
+fam9    3.92
+fam10   4.88
+fam11   7.75
+fam12   5.91
+fam13   8.49
+fam14   9.22
+fam15   3.12
+fam16   4.32
+fam17   6.21
+fam18   5.92
+fam19   13.71
+fam20   10.26
+fam21   4.46
+fam22	4.43
+fam23	5.01
+fam24	5.25
+fam25	9.86
+fam26	6.92
+;
+
+
+param CO := 
+1 85.92
+2 85.92
+3 85.92
+4 85.92
+;
+
+param U := 
+1 16
+2 16
+3 16
+4 16
+;
+
+param D :
+        1   2   3   4	:=
+fam1	0	0	0	0
+fam2	8	4	7	12
+fam3	20	15	14	19
+fam4	0	0	1	1
+fam5	0	0	0	0
+fam6	0	0	0	0
+fam7	14	20	12	36
+fam8	12	15	20	14
+fam9	12	8	17	23
+fam10	48	42	48	42
+fam11	5	5	6	1
+fam12	1	2	2	2
+fam13	0	0	0	0
+fam14	7	7	8	7
+fam15	0	0	0	0
+fam16	1	0	0	1
+fam17	1	1	1	1
+fam18	0	0	0	0
+fam19	0	0	0	0
+fam20	1	1	1	1
+fam21	0	0	0	0
+fam22	13	18	21	22
+fam23	2	2	2	1
+fam24	53	68	77	9
+fam25	0	0	0	2
+fam26	19	17	27	22
+;
+
+
+param ST :=
+
+[*,fam1]
+fam1	0
+fam2	1.67
+fam3	0
+fam4	0
+fam5	0
+fam6	1.67
+fam7	0
+fam8	0
+fam9	0
+fam10	0
+fam11	1.67
+fam12	0
+fam13	0
+fam14	0
+fam15	0
+fam16	0
+fam17	0
+fam18	1.67
+fam19	1.67
+fam20	1.67
+fam21	1.67
+fam22	0
+fam23	0
+fam24	0
+fam25	0
+fam26	0
+
+[*,fam2]
+fam1	0
+fam2	0
+fam3	0
+fam4	0
+fam5	0
+fam6	0
+fam7	0
+fam8	0
+fam9	0
+fam10	0
+fam11	0
+fam12	0
+fam13	0
+fam14	0
+fam15	0
+fam16	0
+fam17	0
+fam18	1.67
+fam19	1.67
+fam20	1.67
+fam21	0
+fam22	0
+fam23	0
+fam24	0
+fam25	0
+fam26	0
+
+[*,fam3]
+fam1	1.67
+fam2	1.67
+fam3	0
+fam4	0
+fam5	0
+fam6	0
+fam7	0
+fam8	0
+fam9	0
+fam10	0
+fam11	0
+fam12	0
+fam13	0
+fam14	0
+fam15	0
+fam16	0
+fam17	0
+fam18	1.67
+fam19	1.67
+fam20	1.67
+fam21	0
+fam22	0
+fam23	0
+fam24	0
+fam25	0
+fam26	0
+
+[*,fam4]
+fam1	1.67
+fam2	1.67
+fam3	0
+fam4	0
+fam5	0
+fam6	1.67
+fam7	0
+fam8	0
+fam9	0
+fam10	0
+fam11	1.67
+fam12	0
+fam13	0
+fam14	0
+fam15	0
+fam16	0
+fam17	0
+fam18	1.67
+fam19	1.67
+fam20	1.67
+fam21	1.67
+fam22	0
+fam23	0
+fam24	0
+fam25	0
+fam26	0
+
+[*,fam5]
+fam1	1.67
+fam2	1.67
+fam3	0
+fam4	0
+fam5	0
+fam6	1.67
+fam7	0
+fam8	0
+fam9	0
+fam10	0
+fam11	1.67
+fam12	0
+fam13	0
+fam14	0
+fam15	0
+fam16	0
+fam17	0
+fam18	1.67
+fam19	1.67
+fam20	1.67
+fam21	0
+fam22	0
+fam23	0
+fam24	0
+fam25	0
+fam26	0
+
+[*,fam6]
+fam1	0
+fam2	0
+fam3	0
+fam4	0
+fam5	0
+fam6	0
+fam7	0
+fam8	0
+fam9	0
+fam10	0
+fam11	0
+fam12	0
+fam13	0
+fam14	1.67
+fam15	0
+fam16	0
+fam17	0
+fam18	1.67
+fam19	1.67
+fam20	1.67
+fam21	0
+fam22	0
+fam23	0
+fam24	0
+fam25	1.67
+fam26	0
+
+[*,fam7]
+fam1	1.67
+fam2	1.67
+fam3	1.67
+fam4	1.67
+fam5	1.67
+fam6	1.67
+fam7	0
+fam8	0
+fam9	0
+fam10	0
+fam11	0
+fam12	0
+fam13	0
+fam14	1.67
+fam15	0
+fam16	0
+fam17	0
+fam18	1.67
+fam19	1.67
+fam20	1.67
+fam21	0
+fam22	0
+fam23	0
+fam24	0
+fam25	1.67
+fam26	0
+
+[*,fam8]
+fam1	1.67
+fam2	1.67
+fam3	1.67
+fam4	1.67
+fam5	1.67
+fam6	1.67
+fam7	0
+fam8	0
+fam9	0
+fam10	0
+fam11	0
+fam12	0
+fam13	0
+fam14	1.67
+fam15	0
+fam16	0
+fam17	0
+fam18	1.67
+fam19	1.67
+fam20	1.67
+fam21	0
+fam22	0
+fam23	0
+fam24	0
+fam25	1.67
+fam26	0
+
+[*,fam9]
+fam1	1.67
+fam2	1.67
+fam3	1.67
+fam4	1.67
+fam5	1.67
+fam6	1.67
+fam7	0
+fam8	0
+fam9	0
+fam10	0
+fam11	0
+fam12	0
+fam13	0
+fam14	1.67
+fam15	0
+fam16	0
+fam17	0
+fam18	1.67
+fam19	1.67
+fam20	1.67
+fam21	0
+fam22	0
+fam23	0
+fam24	0
+fam25	1.67
+fam26	0
+
+[*,fam10]
+fam1	1.67
+fam2	1.67
+fam3	1.67
+fam4	1.67
+fam5	1.67
+fam6	1.67
+fam7	0
+fam8	0
+fam9	0
+fam10	0
+fam11	0
+fam12	0
+fam13	0
+fam14	0
+fam15	0
+fam16	0
+fam17	0
+fam18	1.67
+fam19	1.67
+fam20	1.67
+fam21	0
+fam22	0
+fam23	0
+fam24	0
+fam25	0
+fam26	0
+
+[*,fam11]
+fam1	0
+fam2	1.67
+fam3	0
+fam4	0
+fam5	0
+fam6	1.67
+fam7	0
+fam8	0
+fam9	0
+fam10	0
+fam11	0
+fam12	0
+fam13	0
+fam14	0
+fam15	0
+fam16	0
+fam17	0
+fam18	1.67
+fam19	1.67
+fam20	1.67
+fam21	0
+fam22	0
+fam23	0
+fam24	0
+fam25	0
+fam26	0
+
+[*,fam12]
+fam1	1.67
+fam2	1.67
+fam3	1.67
+fam4	1.67
+fam5	1.67
+fam6	1.67
+fam7	0
+fam8	0
+fam9	0
+fam10	0
+fam11	1.67
+fam12	0
+fam13	0
+fam14	1.67
+fam15	0
+fam16	0
+fam17	0
+fam18	1.67
+fam19	1.67
+fam20	1.67
+fam21	1.67
+fam22	0
+fam23	0
+fam24	0
+fam25	1.67
+fam26	0
+
+[*,fam13]
+fam1	0
+fam2	1.67
+fam3	0
+fam4	0
+fam5	0
+fam6	1.67
+fam7	0
+fam8	0
+fam9	0
+fam10	0
+fam11	1.67
+fam12	0
+fam13	0
+fam14	0
+fam15	0
+fam16	0
+fam17	0
+fam18	1.67
+fam19	1.67
+fam20	1.67
+fam21	1.67
+fam22	0
+fam23	0
+fam24	0
+fam25	0
+fam26	0
+
+[*,fam14]
+fam1	0
+fam2	0
+fam3	0
+fam4	0
+fam5	0
+fam6	0
+fam7	0
+fam8	0
+fam9	0
+fam10	0
+fam11	0
+fam12	0
+fam13	0
+fam14	0
+fam15	0
+fam16	0
+fam17	0
+fam18	1.67
+fam19	1.67
+fam20	1.67
+fam21	0
+fam22	0
+fam23	0
+fam24	0
+fam25	0
+fam26	0
+
+[*,fam15]
+fam1	0
+fam2	1.67
+fam3	0
+fam4	0
+fam5	0
+fam6	1.67
+fam7	0
+fam8	0
+fam9	0
+fam10	0
+fam11	1.67
+fam12	0
+fam13	0
+fam14	1.67
+fam15	0
+fam16	1.67
+fam17	1.67
+fam18	1.67
+fam19	1.67
+fam20	1.67
+fam21	1.67
+fam22	0
+fam23	0
+fam24	0
+fam25	1.67
+fam26	1.67
+
+[*,fam16]
+fam1	0
+fam2	0
+fam3	0
+fam4	0
+fam5	0
+fam6	0
+fam7	0
+fam8	0
+fam9	0
+fam10	0
+fam11	0
+fam12	0
+fam13	0
+fam14	1.67
+fam15	0
+fam16	0
+fam17	0
+fam18	1.67
+fam19	1.67
+fam20	1.67
+fam21	0
+fam22	0
+fam23	0
+fam24	0
+fam25	1.67
+fam26	0
+
+[*,fam17]
+fam1	0
+fam2	0
+fam3	0
+fam4	0
+fam5	0
+fam6	0
+fam7	0
+fam8	0
+fam9	0
+fam10	0
+fam11	0
+fam12	0
+fam13	0
+fam14	0
+fam15	0
+fam16	0
+fam17	0
+fam18	0
+fam19	1.67
+fam20	1.67
+fam21	0
+fam22	0
+fam23	0
+fam24	0
+fam25	0
+fam26	0
+
+[*,fam18]
+fam1	0
+fam2	0
+fam3	0
+fam4	0
+fam5	0
+fam6	0
+fam7	0
+fam8	0
+fam9	0
+fam10	0
+fam11	0
+fam12	0
+fam13	0
+fam14	0
+fam15	0
+fam16	0
+fam17	0
+fam18	0
+fam19	1.67
+fam20	1.67
+fam21	0
+fam22	0
+fam23	0
+fam24	0
+fam25	0
+fam26	0
+
+[*,fam19]
+fam1	0
+fam2	0
+fam3	0
+fam4	0
+fam5	0
+fam6	0
+fam7	0
+fam8	0
+fam9	0
+fam10	0
+fam11	0
+fam12	0
+fam13	0
+fam14	0
+fam15	0
+fam16	0
+fam17	0
+fam18	1.67
+fam19	0
+fam20	1.67
+fam21	0
+fam22	0
+fam23	0
+fam24	0
+fam25	0
+fam26	0
+
+[*,fam20]
+fam1	0
+fam2	0
+fam3	0
+fam4	0
+fam5	0
+fam6	0
+fam7	0
+fam8	0
+fam9	0
+fam10	0
+fam11	0
+fam12	0
+fam13	0
+fam14	0
+fam15	0
+fam16	0
+fam17	0
+fam18	1.67
+fam19	1.67
+fam20	0
+fam21	0
+fam22	0
+fam23	0
+fam24	0
+fam25	0
+fam26	0
+
+[*,fam21]
+fam1	0
+fam2	0
+fam3	0
+fam4	0
+fam5	0
+fam6	0
+fam7	0
+fam8	0
+fam9	0
+fam10	0
+fam11	0
+fam12	0
+fam13	0
+fam14	1.67
+fam15	0
+fam16	0
+fam17	0
+fam18	1.67
+fam19	1.67
+fam20	1.67
+fam21	0
+fam22	0
+fam23	0
+fam24	0
+fam25	1.67
+fam26	0
+
+[*,fam22]
+fam1	1.67
+fam2	1.67
+fam3	1.67
+fam4	1.67
+fam5	1.67
+fam6	1.67
+fam7	0
+fam8	0
+fam9	0
+fam10	0
+fam11	0
+fam12	0
+fam13	0
+fam14	1.67
+fam15	0
+fam16	0
+fam17	0
+fam18	1.67
+fam19	1.67
+fam20	1.67
+fam21	0
+fam22	0
+fam23	0
+fam24	0
+fam25	1.67
+fam26	0
+
+[*,fam23]
+fam1	1.67
+fam2	1.67
+fam3	1.67
+fam4	1.67
+fam5	1.67
+fam6	1.67
+fam7	0
+fam8	0
+fam9	0
+fam10	0
+fam11	0
+fam12	0
+fam13	0
+fam14	1.67
+fam15	0
+fam16	0
+fam17	0
+fam18	1.67
+fam19	1.67
+fam20	1.67
+fam21	0
+fam22	0
+fam23	0
+fam24	0
+fam25	1.67
+fam26	0
+
+[*,fam24]
+fam1	1.67
+fam2	1.67
+fam3	1.67
+fam4	1.67
+fam5	1.67
+fam6	1.67
+fam7	0
+fam8	0
+fam9	0
+fam10	0
+fam11	0
+fam12	0
+fam13	0
+fam14	0
+fam15	0
+fam16	0
+fam17	0
+fam18	1.67
+fam19	1.67
+fam20	1.67
+fam21	0
+fam22	0
+fam23	0
+fam24	0
+fam25	0
+fam26	0
+
+[*,fam25]
+fam1	0
+fam2	0
+fam3	0
+fam4	0
+fam5	0
+fam6	0
+fam7	0
+fam8	0
+fam9	0
+fam10	0
+fam11	0
+fam12	0
+fam13	0
+fam14	0
+fam15	0
+fam16	0
+fam17	0
+fam18	1.67
+fam19	1.67
+fam20	1.67
+fam21	0
+fam22	0
+fam23	0
+fam24	0
+fam25	0
+fam26	0
+
+[*,fam26]
+fam1	0
+fam2	0
+fam3	0
+fam4	0
+fam5	0
+fam6	0
+fam7	0
+fam8	0
+fam9	0
+fam10	0
+fam11	0
+fam12	0
+fam13	0
+fam14	0
+fam15	0
+fam16	0
+fam17	0
+fam18	0
+fam19	1.67
+fam20	1.67
+fam21	0
+fam22	0
+fam23	0
+fam24	0
+fam25	0
+fam26	0
+;
+
+
